@@ -2555,7 +2555,8 @@ textarea:focus { outline: none; border-color: var(--clr-forest) !important; box-
 }
 
 @media (max-width: 768px) {
-  .nav-actions-wrapper { margin-left: auto; margin-right: var(--space-md); }
+  .nav-actions-wrapper { margin-left: auto; margin-right: var(--space-md); order: 2; }
+  .nav-toggle { order: 3; }
 }
 
 .nav-search-btn {
