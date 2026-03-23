@@ -1428,13 +1428,11 @@ ul, ol { list-style: none; }
   background: var(--clr-forest);
   color: rgba(255,255,255,0.75);
   font-size: 0.78rem;
-  padding: 6px 0;
+  padding: 0;
   position: sticky;
   top: 0; left: 0; right: 0;
   z-index: 1002;
   height: var(--top-bar-height);
-  display: flex;
-  align-items: center;
   transition: transform var(--transition);
 }
 
@@ -1444,6 +1442,8 @@ ul, ol { list-style: none; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .top-bar-tagline { opacity: 0.65; letter-spacing: 0.04em; }
