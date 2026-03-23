@@ -4,18 +4,8 @@
 
 'use strict';
 
-// ── Top Bar hide-on-scroll ────────────────────────────────────
-const topBar = document.getElementById('top-bar');
-let lastScroll = 0;
-
-window.addEventListener('scroll', () => {
-  const currentScroll = window.scrollY;
-  if (topBar) {
-    topBar.classList.toggle('hidden', currentScroll > 80 && currentScroll > lastScroll);
-  }
-  lastScroll = currentScroll;
-}, { passive: true });
-
+// ── Top Bar visibility ────────────────────────────────────
+// Top bar is now set to remain permanently sticky via CSS
 // ── Sticky Header ─────────────────────────────────────────────
 const header = document.getElementById('site-header');
 
