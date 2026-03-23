@@ -1368,7 +1368,7 @@ ul, ol { list-style: none; }
 @media (max-width: 768px) {
   :root { --space-4xl: 3.5rem; --space-3xl: 2.5rem; }
 
-  .nav-toggle { display: flex; color: var(--clr-white); }
+  .nav-toggle { display: flex; color: var(--clr-forest); }
   .site-header.scrolled .nav-toggle { color: var(--clr-forest); }
 
   .nav-links {
@@ -2170,7 +2170,23 @@ textarea:focus { outline: none; border-color: var(--clr-forest) !important; box-
   .top-bar { display: none; }
   .site-header { top: 0 !important; }
   .hero-content { padding-top: calc(var(--nav-height) + var(--space-4xl)) !important; }
-  .mega-menu { display: none; }
+  
+  .mega-menu {
+    display: none;
+    position: static;
+    min-width: 100%;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+    padding: var(--space-sm) 0 var(--space-md) var(--space-md);
+    box-shadow: none;
+    border-top: none;
+  }
+  .mega-menu::before, .mega-menu::after { display: none; }
+  .mega-grid { grid-template-columns: 1fr; gap: var(--space-md); }
+  .nav-item.mega-open .mega-menu { display: block; }
+  
   .hero-quick-access { display: none; }
   .hike-grid { grid-template-columns: 1fr; }
   .involve-grid { grid-template-columns: 1fr 1fr; }
