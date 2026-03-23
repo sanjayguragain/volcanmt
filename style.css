@@ -2531,7 +2531,15 @@ textarea:focus { outline: none; border-color: var(--clr-forest) !important; box-
   .gateway-grid { grid-template-columns: 1fr 1fr; }
   .featured-event-card { flex-direction: column; }
   .leadership-grid { grid-template-columns: 1fr; }
-  .page-subnav { overflow-x: auto; justify-content: flex-start; flex-wrap: nowrap; padding: 0 var(--space-md); }
+  .page-subnav { 
+    overflow-x: visible; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding: var(--space-sm) var(--space-md);
+    position: sticky;
+    top: var(--nav-height);
+    z-index: 999;
+  }
 }
 
 @media (max-width: 480px) {
