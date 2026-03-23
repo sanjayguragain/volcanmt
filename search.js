@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalHTML = `
     <div id="vmf-search-modal" class="search-modal" aria-hidden="true" role="dialog">
       <div class="search-modal-backdrop" id="search-close-backdrop"></div>
-      <div class="search-modal-content fade-in-up">
+      <div class="search-modal-content">
         <div class="search-header">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           <input type="text" id="vmf-search-input" placeholder="Search Volcan Mountain..." autocomplete="off">
