@@ -277,7 +277,7 @@ ul, ol { list-style: none; }
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.9);
+  color: var(--clr-forest);
   transition: color var(--transition);
   position: relative;
 }
@@ -293,12 +293,12 @@ ul, ol { list-style: none; }
   border-radius: 1px;
 }
 
-.nav-link:hover { color: var(--clr-white); }
+.nav-link:hover { color: var(--clr-text-muted); }
 .nav-link:hover::after { transform: scaleX(1); }
 
 .nav-link--donate {
-  background: rgba(255,255,255,0.15);
-  border: 1.5px solid rgba(255,255,255,0.5);
+  background: var(--clr-forest);
+  border: 1.5px solid var(--clr-forest);
   padding: 0.35rem 1rem;
   border-radius: 100px;
   color: var(--clr-white) !important;
@@ -307,9 +307,9 @@ ul, ol { list-style: none; }
 }
 
 .nav-link--donate:hover {
-  background: var(--clr-white);
-  color: var(--clr-forest) !important;
-  border-color: var(--clr-white);
+  background: var(--clr-forest-mid);
+  color: var(--clr-white) !important;
+  border-color: var(--clr-forest-mid);
 }
 
 .nav-link--donate::after { display: none !important; }
