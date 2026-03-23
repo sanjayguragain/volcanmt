@@ -1760,7 +1760,7 @@ ul, ol { list-style: none; }
 
 .timeline {
   position: relative;
-  padding-left: 80px;
+  padding-left: 140px;
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
@@ -1771,7 +1771,7 @@ ul, ol { list-style: none; }
 .timeline::before {
   content: '';
   position: absolute;
-  left: 36px;
+  left: 90px;
   top: 0; bottom: 0;
   width: 2px;
   background: linear-gradient(to bottom, var(--clr-moss), var(--clr-sage), var(--clr-forest));
@@ -1779,15 +1779,13 @@ ul, ol { list-style: none; }
 
 .timeline-item {
   position: relative;
-  display: flex;
-  gap: var(--space-xl);
-  align-items: flex-start;
+  display: block;
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -50px;
+  left: -56px;
   top: 6px;
   width: 12px; height: 12px;
   border-radius: 50%;
@@ -1800,7 +1798,7 @@ ul, ol { list-style: none; }
   background: var(--clr-forest);
   box-shadow: 0 0 0 2px var(--clr-forest), 0 0 0 5px rgba(45,92,66,0.2);
   width: 16px; height: 16px;
-  left: -52px;
+  left: -58px;
 }
 
 .timeline-year {
@@ -1808,11 +1806,11 @@ ul, ol { list-style: none; }
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--clr-sage);
-  min-width: 80px;
+  width: 80px;
   padding-top: 2px;
   text-align: right;
   position: absolute;
-  left: -72px;
+  left: -150px;
   top: 0;
 }
 
@@ -2190,11 +2188,19 @@ textarea:focus { outline: none; border-color: var(--clr-forest) !important; box-
   .hero-quick-access { display: none; }
   .hike-grid { grid-template-columns: 1fr; }
   .involve-grid { grid-template-columns: 1fr 1fr; }
-  .timeline { padding-left: 40px; }
-  .timeline-year { left: -38px; font-size: 0.75rem; min-width: 40px; }
-  .timeline::before { left: 16px; }
-  .timeline-item::before { left: -26px; }
-  .timeline-item--current::before { left: -28px; }
+  .timeline { padding-left: 32px; }
+  .timeline::before { left: 8px; }
+  .timeline-item::before { left: -30px; }
+  .timeline-item--current::before { left: -32px; }
+  .timeline-item { display: flex; flex-direction: column; gap: 0; }
+  .timeline-year { 
+    position: static; 
+    width: auto; 
+    text-align: left; 
+    margin-bottom: var(--space-xs); 
+    font-size: 0.85rem; 
+    padding-top: 0; 
+  }
   .footer-grid { grid-template-columns: 1fr 1fr !important; }
   .art-actions { flex-direction: column; }
   .edu-actions { flex-direction: column; }
